@@ -31,7 +31,7 @@ get_header();
                 <?php if (is_sticky()) continue; //ignore sticky posts
                 ?>
 
-                <div class="card horizontal mb-4">
+                <div class="mb-4">
                   <div class="row g-0">
 
                     <?php if (has_post_thumbnail()) : ?>
@@ -45,22 +45,11 @@ get_header();
                     <div class="col">
                       <div class="card-body">
 
-                        <?php bootscore_category_badge(); ?>
+
 
                         <a class="text-body text-decoration-none" href="<?php the_permalink(); ?>">
                           <?php the_title('<h2 class="blog-post-title h5">', '</h2>'); ?>
                         </a>
-
-                        <?php if ('post' === get_post_type()) : ?>
-                          <p class="meta small mb-2 text-body-tertiary">
-                            <?php
-                            bootscore_date();
-                            bootscore_author();
-                            bootscore_comments();
-                            bootscore_edit();
-                            ?>
-                          </p>
-                        <?php endif; ?>
 
                         <p class="card-text">
                           <a class="text-body text-decoration-none" href="<?php the_permalink(); ?>">
