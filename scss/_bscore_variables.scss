@@ -1,6 +1,6 @@
 // In this file you can override the default variables of Bootstrap
 // Do you want primary to be green? Just add "$primary: #00FF00;" to this file and the theme will automatically compile the scss for you.
-// Check this out for color codes
+// Check this out for color codes https://bootscore.me/documentation/theme/css-scss-compiler/#bscore_variablesscss
 
 
 // Color system
@@ -29,7 +29,7 @@ $black: #000;
 // scss-docs-start color-variables
 $blue: #0d6efd;
 $indigo: #6610f2;
-$purple: $purple-500;
+$purple: $purple-600;
 $pink: #d63384;
 $red: #dc3545;
 $orange: #fd7e14;
@@ -38,8 +38,8 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
-$primary: purple;
-$secondary: $gray-600;
+$primary: $purple;
+$secondary: $purple-500;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
